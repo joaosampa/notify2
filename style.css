@@ -1,0 +1,67 @@
+body{
+    display: grid;
+    grid-template-areas:
+                        "nav"
+                        "header"
+                        "icones"
+                        "video"
+                        "perfil"
+                        "footer";
+    grid-template-columns: 99.8vw;
+    grid-template-rows: 2vh 60vh 50vh 50vh 60vh 20vh;
+    margin: 0vw;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #008000;
+
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+    background-image: url(img/banner.png);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SECTION ICONES */
+
+.icones{
+    grid-area: icones;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ico-hea img{ 
+    background-color: #008000;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* SECTION VIDEO */
+.video{
+    grid-area: video;
+    background-color:  #e3e3e3 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+
+}
+
+/* SECTION PERFIL*/
+
+.perfil{
+    grid-area:perfil;
+    background-color: #008000;
+}
+
+/* FOOTER*/
+footer{
+    grid-area: footer;
+    background-color:#e3e3e3;
+}
+/* section{
